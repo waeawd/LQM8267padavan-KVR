@@ -190,7 +190,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_UVC=n" >> .config
 
         ##包含 USB-HID 模块。约 0.2MB
-        echo "CONFIG_FIRMWARE_INCLUDE_HID=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_HID=n" >> .config
 
         ##包含 USB-Serial 模块（例如 pl2303）。约 0.03MB
         echo "CONFIG_FIRMWARE_INCLUDE_SERIAL=n" >> .config
@@ -253,7 +253,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_RPL2TP=n" >> .config
 
         ##包含 EAP-TTLS 和 EAP-PEAP 认证支持。openssl 约 1.2MB，wpa_supplicant 约 0.04MB
-        echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_EAP_PEAP=y" >> .config
 
         ##为 DDNS 客户端包含 HTTPS 支持。openssl 约 1.2MB
         echo "CONFIG_FIRMWARE_INCLUDE_DDNS_SSL=y" >> .config
@@ -356,10 +356,10 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TTYD=n" >> .config
 
          ## 文件传输工具
-        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> .config
 
          ## 系统状态监控工具
-        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config
 
          ## 文本编辑器
         echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> .config
@@ -374,7 +374,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_RTL_SDR=n" >> .config
 
         ## MTR
-        echo "CONFIG_FIRMWARE_INCLUDE_MTR=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_MTR=n" >> .config
 
         ## ipv6端口转发工具
         echo "CONFIG_FIRMWARE_INCLUDE_SOCAT=y" >> .config
