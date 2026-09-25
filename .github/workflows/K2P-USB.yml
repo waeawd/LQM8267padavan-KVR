@@ -68,7 +68,6 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_HID/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SERIAL/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_AUDIO/d' .config
-
         sed -i '/CONFIG_FIRMWARE_INCLUDE_XFRM/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_QOS/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_IMQ/d' .config
@@ -103,9 +102,7 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MINIDLNA/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FIREFLY/d' .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config
-
-        
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW/d' .config     
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TRANSMISSION/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_ARIA/d' .config
