@@ -233,7 +233,7 @@ jobs:
         #echo "CONFIG_FIRMWARE_INCLUDE_IPSET=y" >> .config
 
         ##包含 NFSv3 服务器。约 0.6MB  已删除 /trunk/user/httpd/common.h
-        echo "CONFIG_FIRMWARE_INCLUDE_NFSD=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_NFSD=n" >> .config
 
         ## 包含 CIFS（SMB）客户端。约 0.2MB
         echo "CONFIG_FIRMWARE_INCLUDE_CIFS=y" >> .config
